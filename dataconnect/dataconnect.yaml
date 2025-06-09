@@ -1,0 +1,12 @@
+specVersion: "v1"
+serviceId: "exercise-logger"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "exercise-logger-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
